@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import AddRecipePage from './pages/AddRecipePage';
+import ConversionPage from './pages/ConversionPage';
+import ErrorPage from './pages/ErrorPage';
+import FAQPage from './pages/FAQPage';
+import FavoritePage from './pages/FavoritePage';
+import ProfilPage from './pages/ProfilPage';
+import RecipeListPage from './pages/RecipeListPage';
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <BrowserRouter>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/About" element={<AboutPage/>}/>
+          <Route path="/AddRecipe" element={<AddRecipePage/>}/>
+          <Route path="/Conversion" element={<ConversionPage/>}/>
+          <Route path="/FAQ" element={<FAQPage/>}/>
+          <Route path="/FavoriteRecipe" element={<FavoritePage/>}/>
+          <Route path="/Profil" element={<ProfilPage/>}/>
+          <Route path="/RecipeList" element={<RecipeListPage/>}/>
+          <Route path="*" element={<ErrorPage/>}/>
+      
+        </Routes>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    
+    </BrowserRouter>
+
+
   )
 }
 
