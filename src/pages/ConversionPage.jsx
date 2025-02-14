@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ConversionPage(props) {
+function ConversionPage() {
     return (
         <div>
             <h1>Conversion Page</h1>

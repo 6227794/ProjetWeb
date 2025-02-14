@@ -9,6 +9,7 @@ import FAQPage from './pages/FAQPage';
 import FavoritePage from './pages/FavoritePage';
 import ProfilPage from './pages/ProfilPage';
 import RecipeListPage from './pages/RecipeListPage';
+import ViewRecipePage from './pages/ViewRecipePage';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/FavoriteRecipe" element={<FavoritePage/>}/>
           <Route path="/Profil" element={<ProfilPage/>}/>
           <Route path="/RecipeList" element={<RecipeListPage/>}/>
+          <Route path="/ViewRecipe" element={<ViewRecipePage/>}/>
           <Route path="*" element={<ErrorPage/>}/>
       
         </Routes>

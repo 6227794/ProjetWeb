@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FavoritePage(props) {
+function FavoritePage() {
     return (
         <div>
             <h1>Favorite Recipe Page</h1>

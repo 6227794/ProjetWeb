@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FAQPage(props) {
+function FAQPage() {
     return (
         <div>
             <h1>FAQ Page</h1>
