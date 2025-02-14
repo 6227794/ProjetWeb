@@ -1,4 +1,4 @@
-# Projet Application Web
+# :herb: Projet Application Web :herb:
 ## Description du projet 
 Flexi Food est une application web interactive et dynamique de recettes. Ce projet web permet aux utilisateurs de consulter des recettes et suggérer des variantes aux autres utilisateurs selon le régime. L’utilisateur pourra générer une version PDF de la recette ainsi que de sa liste d’ingrédients afin qu’elle soit téléchargée et/ou imprimée. Cette application web de recettes sera développé en React avec JSX pour le front end, Java pour le backend ainsi que MariaDB /SQL pour la persistance des données.
 ## Technologie Utilisées
