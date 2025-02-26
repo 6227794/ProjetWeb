@@ -1,42 +1,128 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --mainborder: 15px;
+  --innerborder: 8px;
+  --dark_green:#121D14;
+  --forest_green:#183B25;
+  --moss_green:#344E41;
+  --green:#3A5B40;
+  --light_green:#588057;
+  --lighter_green:#6F9675;
+  --lime_green:#B6CF62;
+  --greige:#DAD7CD;
+  --beige:#F4F0E5;
+  --warning:#890303;
+  --white:white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  background-color: var(--beige);
+  font-family: "Montserrat", serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3, h4, h5, h6{
+  font-family: "Bebas Neue", serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+p{
+  color: var(--dark_green);
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
-.card {
-  padding: 2em;
+nav{
+  background-color: var(--lime_green);
+  padding: 0.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.read-the-docs {
-  color: #888;
+.appname{
+  font-family: "Bebas Neue", serif;
+  font-size: 2rem;
+}
+
+.mainnav{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.mainnav li{
+  list-style: none;
+}
+
+.mainnav a{
+  font-family: "Bebas Neue", serif;
+  font-size: 1.2rem;
+  color: var(--dark_green);
+  text-decoration: none;
+}
+
+.mainnav a:hover{
+  text-decoration: underline;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover {background-color: #3e8e41;} */
+
+footer {
+  background-color: var(--forest_green);
+  color: var(--beige);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 2rem 20% 1rem;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+.nav-footer{
+  font-family: "Bebas Neue", serif;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.appnameft{
+  color: var(--greige);
+  font-family: "Bebas Neue", serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.homebg{
+  width: 100%;
 }
